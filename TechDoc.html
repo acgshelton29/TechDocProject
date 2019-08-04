@@ -37,10 +37,10 @@
                         <ul>
                             <li>
                                 Client-Side Javascript allows objects control over the browser and the Document Object Model (DOM).
-
+                                As an example, client-side extensions allow an application to place elements on an HTML document and respond to users' interaction.
                             </li>
                             <li>
-
+                                Server-side JavaScript creates objects that assists with Running JavaScript on a server.
                             </li>
                         </ul>
                     </section>
@@ -49,17 +49,17 @@
                             <h2>What You Should Know</h2>
                         </header>
                         <p>
-
+                            This document assumes you have a basic level understanding of:
                         </p>
                         <ul>
                             <li>
-
+                                The Internet and World Wide Web (WWW).
                             </li>
                             <li>
-
+                                HyperText Markup Language (HTML).
                             </li>
                             <li>
-
+                                Programming concepts.
                             </li>
                         </ul>
                     </section>
@@ -68,13 +68,9 @@
                             <h2>Java and JavasScript</h2>
                         </header>
                         <p>
-
-                        </p>
-                        <p>
-
-                        </p>
-                        <p>
-
+                            Java and JavaScript are similiar in a few ways, but are ultimately fundamentally different.
+                            For example, JavaScript does not have Java's static typing or strong type checking.
+                            JavaScript does however follow Java's basic control flow, expression syntax, and naming conventions.
                         </p>
                     </section>
                     <section id="HelloWorld" class="main-section">
@@ -82,12 +78,12 @@
                             <h2>Hello World</h2>
                         </header>
                         <p>
-
+                            To get started, we are gonna write our first "Hellow World" JavaScript program in Scratchpad.
                         </p>
                         <code>
-                            
+                            function greetMe(yourName) {alert("Hello " + yourName);}
                             <br>
-
+                            greetMe("World");
                         </code>
                         <p>
 
@@ -98,13 +94,14 @@
                             <h2>Variables</h2>
                         </header>
                         <p>
-
+                            A varibale acts as a container for data and the name of the variable must adhere to certain rules.
                         </p>
                         <p>
-
+                            A variable in JavaScript must either start with a letter, underscore, or a dollar sign.
+                            Javascript is also case sensitive, so the letter "A" is not considered the same as the letter "a".
                         </p>
                         <p>
-
+                            JavaScript will also accept ISO 8859-1 or unicode letters.
                         </p>
                     </section>
                     <section id="DecVar" class="main-section">
@@ -112,34 +109,34 @@
                             <h2>Declaring Variables</h2>
                         </header>
                         <p>
-
+                            There are three ways that you can declare a variable in JavaScript:
                         </p>
                         <p>
-
-                        </p>
-                        <code>
-
-                        </code>
-                        <p>
-
-                        </p>
-                        <p>
-
+                            By using the keyword, var.
                         </p>
                         <code>
-
+                            var x = 7;
                         </code>
                         <p>
-
+                            This way can be used on both global and local variables.
                         </p>
                         <p>
-
+                            By assigning it a value.
                         </p>
                         <code>
-
+                            x = 7;
                         </code>
                         <p>
-
+                            This way only declares global variables, and should never be used.
+                        </p>
+                        <p>
+                            By using the keyword, let.
+                        </p>
+                        <code>
+                            let x = 7;
+                        </code>
+                        <p>
+                            This can create a block scope local variable.
                         </p>
                     </section>
                     <section id="DataTypes" class="main-section">
@@ -147,39 +144,38 @@
                             <h2>Data Types</h2>
                         </header>
                         <p>
-
+                            The latest version of ECMAscript as of typing this, includes seven data types.
                         </p>
                         <ul>
                             <li>
-
+                                Six primitive data types:
                             </li>
                             <ul>
                                 <li>
-
+                                    Boolean, which is true and false values.
                                 </li>
                                 <li>
-
+                                    null, no value.
                                 </li>
                                 <li>
-
+                                    undefined, value is not defined.
                                 </li>
                                 <li>
-
+                                    number, whole numbers like 7 or floating point numbers like 7.1234
                                 </li>
                                 <li>
-
+                                    String, like "Hello World"
                                 </li>
                                 <li>
-
+                                    Symbols, values that are unique and immutable.
                                 </li>
                             </ul>
                             <li>
-
+                                and object.
                             </li>
-
                         </ul>
                         <p>
-
+                            Although there are not that many different data types, they are incredibly powerful and can help alot of functionality to a website.
                         </p>
                     </section>
                     <section>
@@ -187,45 +183,49 @@
                             <h2>If. . . Else Statements</h2>
                         </header>
                         <p>
-
+                            An If statement will execute a block of code when a certain condition is true.
+                            If you want a block of code to run when that condition is false, you add an else statement.
                         </p>
                         <code>
-
+                            if (condition) {statement1;} else {statement2;}
                         </code>
                         <p>
-
+                            The condition can be anything as long as it is an expression that results in a boolean value.
+                            the statements can be any type of statement as long as it is symantically and logically correct.
                         </p>
                         <p>
-
+                            You can also compound statements using elseif.
                         </p>
                         <code>
-
+                            if (condition1) {statement1;} else if (condition2) {statement2;} 
                             <br>
-
+                            else if (condition3) {statement3;} else {statement4;}
                         </code>
                         <p>
-
+                            In the case of several conditions, only the first true one will be executed.
+                            If it becomes necessary to run multiple statements, group them together in a single block.
                         </p>
                         <code>
-
+                            if (condition) { statement_1_runs_if_condition_is_true;
                             <br>
-
+                            statement_2_runs_if_condition_is_true; }
                             <br>
-
+                            else {statement_3_runs_if_condition_is_false;
                             <br>
-
+                            statement_4_runs_if_condition_is_false; }
                         </code>
                         <p>
-
+                            It is not advised to use assignment expressions in conditions because they can be confused with equality assignments.
+                            For example:
                         </p>
                         <code>
-
+                            if (x = y) {statement;}
                         </code>
                         <p>
-
+                            If you need to use an assignment expression, it is courteous to use an extra set of parantheses:
                         </p>
                         <code>
-
+                            if ((x = y)) {statement;}
                         </code>
                     </section>
                     <section>
@@ -233,8 +233,10 @@
                             <h2>References</h2>
                         </header>
                         <ul>
-                            <li></li>
-                            <li></li>
+                            <li>
+                                Most of the information and text was taken from
+                                <a href="https://codepen.io/freeCodeCamp/full/NdrKKL"> FreeCodeCamp's CodePen</a>.
+                            </li>
                         </ul>
                     </section>
                 </main>
